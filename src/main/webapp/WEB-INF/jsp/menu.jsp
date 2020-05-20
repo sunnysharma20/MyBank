@@ -5,7 +5,7 @@
 	<a href="${pageContext.request.contextPath}/welcome">Home</a> | &nbsp;
 
 	<a href="${pageContext.request.contextPath}/addNewAccount">Add
-		Employee</a> | &nbsp; <a
+		Account</a> | &nbsp; <a
 		href="${pageContext.request.contextPath}/getAccounts">Show
-		Employees</a>
+		Account</a>
 </div>
