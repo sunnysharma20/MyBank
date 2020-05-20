@@ -12,12 +12,12 @@
 		<form:form action="/addNewAccount" method="post"
 			modelAttribute="acc">
 			<p>
-				<label>Enter Account Id</label>
-				<form:input path="Id" />
-			</p>
-			<p>
 				<label>Enter Name</label>
 				<form:input path="Name" />
+			</p>
+			<p>
+				<label>Enter Address</label>
+				<form:input path="Address" />
 			</p>
 			<input type="SUBMIT" value="Submit" />
 		</form:form>
