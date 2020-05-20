@@ -35,6 +35,7 @@ public class AccountDaoImpl extends JdbcDaoSupport implements AccountDao {
 			Account acc = new Account();
 			acc.setId((Integer) row.get("Id"));
 			acc.setName((String) row.get("Name"));
+			acc.setAddress((String) row.get("Address"));
 			result.add(acc);
 		}
 
