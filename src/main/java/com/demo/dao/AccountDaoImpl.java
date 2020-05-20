@@ -33,7 +33,7 @@ public class AccountDaoImpl extends JdbcDaoSupport implements AccountDao {
 		List<Account> result = new ArrayList<Account>();
 		for (Map<String, Object> row : rows) {
 			Account acc = new Account();
-			acc.setId((String) row.get("Id"));
+			acc.setId((Integer) row.get("Id"));
 			acc.setName((String) row.get("Name"));
 			result.add(acc);
 		}

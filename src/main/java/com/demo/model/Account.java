@@ -2,16 +2,16 @@ package com.demo.model;
 
 public class Account {
 
-	private String Id;
+	private Integer Id;
 	private String Name;
 	private String Address;
 	private String Balance;
 
-	public String getId() {
+	public Integer getId() {
 		return Id;
 	}
 
-	public void setId(String Id) {
+	public void setId(Integer Id) {
 		this.Id = Id;
 	}
 
