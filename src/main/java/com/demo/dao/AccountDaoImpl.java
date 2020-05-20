@@ -44,7 +44,7 @@ public class AccountDaoImpl extends JdbcDaoSupport implements AccountDao {
 	@Override
 	public void insertAccount(Account account) {
 		String sql = "INSERT INTO account " +
-				"(name,address,balance) VALUES ( ?, ?, 0)" ;
+				"(name,address) VALUES ( ?, ?)" ;
 		getJdbcTemplate().update(sql, new Object[]{
 				account.getId(), account.getName()
 		});
