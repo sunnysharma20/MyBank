@@ -13,11 +13,11 @@
 			modelAttribute="acc">
 			<p>
 				<label>Enter Account Id</label>
-				<form:input path="empId" />
+				<form:input path="Id" />
 			</p>
 			<p>
 				<label>Enter Name</label>
-				<form:input path="empName" />
+				<form:input path="Name" />
 			</p>
 			<input type="SUBMIT" value="Submit" />
 		</form:form>
