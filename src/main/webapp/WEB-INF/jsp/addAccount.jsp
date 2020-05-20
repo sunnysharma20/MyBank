@@ -10,7 +10,7 @@
 
 	<div id="addEmployee">
 		<form:form action="/addNewAccount" method="post"
-			modelAttribute="emp">
+			modelAttribute="acc">
 			<p>
 				<label>Enter Account Id</label>
 				<form:input path="empId" />
