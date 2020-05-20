@@ -10,15 +10,15 @@ services:
       - mysqldb
     restart: always 
   mysqldb:
-    image: pbeniwal/apnamysql
+    image: mysql:8
     networks:
       - mybank-mysql
     environment:
       - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_DATABASE=apnabank  
+      - MYSQL_DATABASE=mybankdb  
     volumes:
-      - my-datavolume:/var/lib/mysql
+      - mybank-datavolume:/var/lib/mysql
 networks:
   mybank-mysql:
 volumes:
-  my-datavolume:
+  mybank-datavolume:
