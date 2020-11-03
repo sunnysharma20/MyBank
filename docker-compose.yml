@@ -1,24 +1,26 @@
 version: "3"
 services:
-  mybank-jdbc:
+  web:
     image: mybankjdbc
     ports:
       - "8888:8080"
     networks:
-      - mybank-mysql
+      - net
     depends_on:
       - mysqldb
     restart: always 
   mysqldb:
     image: mysql:8
     networks:
-      - mybank-mysql
+      - net
+    ports:
+      - "3306:3306"
     environment:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=mybankdb  
     volumes:
-      - mybank-datavolume:/var/lib/mysql
+      - dv:/var/lib/mysql
 networks:
-  mybank-mysql:
+  net:
 volumes:
-  mybank-datavolume:
+  dv:
