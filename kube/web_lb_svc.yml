@@ -1,15 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: employee-jdbc
-  labels:
-    run: web-service
+  name: mybank-jdbc
 spec:
   selector:
-    app: employee-jdbc
+    app: mybank-jdbc
   type: LoadBalancer
-  externalIPs:
-  - 10.128.0.30
   ports:
   - port: 9999
     targetPort: 8080

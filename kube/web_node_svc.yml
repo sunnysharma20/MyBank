@@ -4,7 +4,7 @@ metadata:
   name: web-node-svc
 spec:
   selector:
-    app: employee-jdbc
+    app: mybank-jdbc
   type: NodePort
   ports:
     - port: 8888

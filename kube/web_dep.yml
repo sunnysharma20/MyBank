@@ -1,21 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: employee-jdbc
-  labels:
-    app: employee-jdbc
+  name: mybank-jdbc
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
-      app: employee-jdbc
+      app: mybank-jdbc
   template:
     metadata:
       labels:
-        app: employee-jdbc
+        app: mybank-jdbc
     spec:
       containers:
-      - name: employee-jdbc
+      - name: mybank-jdbc
         image: pbeniwal/mybankjdbc:v1
         ports:
         - containerPort: 8080
