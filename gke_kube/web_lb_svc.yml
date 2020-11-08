@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mybank-jdbc
+spec:
+  selector:
+    app: mybank-jdbc
+  type: LoadBalancer
+  ports:
+  - port: 9999
+    targetPort: 8080
