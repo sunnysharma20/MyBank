@@ -24,8 +24,13 @@ public class WelcomeController {
 	@Autowired
 	AccountService accountService;
 
-	@RequestMapping("/welcome")
+	@RequestMapping("/")
 	public ModelAndView firstPage() {
+		return new ModelAndView("welcome");
+	}
+
+	@RequestMapping("/welcome")
+	public ModelAndView welcomePage() {
 		return new ModelAndView("welcome");
 	}
 
